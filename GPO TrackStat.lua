@@ -88,7 +88,7 @@ end
 local function Mode()
     if game.PlaceId == 11424731604 then
         updateGoogleSheet("D" .. Cell, "Waiting For Mode")
-        game:GetService("Players").LocalPlayer.leaderstats.Lives.Value.Changed:Connect(function()
+        game:GetService("Players").LocalPlayer.leaderstats.Lives.Changed:Connect(function()
             local Lives = game:GetService("Players").LocalPlayer.leaderstats.Lives
 
             if Lives.Value == 2 then
